@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心灵书阁 | 心理学×儒释道 — 文章与随笔</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700;900&family=ZCOOL+XiaoWei&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========== TOP LANGUAGE BAR ========== -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <span class="top-bar-left">心灵书阁 · XinLingShuGe</span>
+            <div class="lang-dropdown" id="langDropdown">
+                <button class="lang-trigger" id="langTrigger">
+                    <span id="currentLang">简体中文</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="lang-menu" id="langMenu">
+                    <button class="lang-option active" data-lang="zh-CN">简体中文</button>
+                    <button class="lang-option" data-lang="zh-TW">繁體中文</button>
+                    <button class="lang-option" data-lang="en">English</button>
+                    <button class="lang-option" data-lang="ja">日本語</button>
+                    <button class="lang-option" data-lang="ko">한국어</button>
+                    <button class="lang-option" data-lang="es">Español</button>
+                    <button class="lang-option" data-lang="de">Deutsch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="site-nav" id="siteNav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <span class="brand-seal">慧</span>
+                <span class="brand-text">心灵书阁</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">书籍</a></li>
+                <li><a href="articles.html" class="active">文章</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#consult">咨询预约</a></li>
+            </ul>
+            <button class="menu-btn" id="menuBtn" aria-label="打开菜单"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">书籍</a>
+        <a href="articles.html">文章</a>
+        <a href="index.html#about">关于我</a>
+        <a href="index.html#consult">咨询预约</a>
+    </div>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <div class="page-header" data-char="文">
+        <span class="section-label reveal">ARTICLES &amp; ESSAYS</span>
+        <h1 class="section-title reveal" style="--delay:0.1s">笔墨<span class="accent">随心</span></h1>
+        <p class="section-subtitle reveal" style="--delay:0.2s">以文字为桥梁，连接古今智慧与现代心灵</p>
+    </div>
+
+    <!-- ========== ARTICLES SECTION ========== -->
+    <section class="section">
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">全部</button>
+            <button class="filter-tab" data-filter="psychology">心理学</button>
+            <button class="filter-tab" data-filter="confucian">儒家修身</button>
+            <button class="filter-tab" data-filter="buddhist">佛学禅修</button>
+            <button class="filter-tab" data-filter="taoist">道家智慧</button>
+            <button class="filter-tab" data-filter="integration">融通心学</button>
+            <button class="filter-tab" data-filter="life">生命实践</button>
+            <button class="filter-tab" data-filter="astro">占星</button>
+        </div>
+
+        <div class="article-list">
+            <a href="#" class="article-row reveal" style="--delay:0.05s" data-category="buddhist">
+                <span class="article-row-num">01</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-buddhist">佛法智慧</span>
+                    <h3 class="article-row-title">允许发生一切：真正的接纳是什么？</h3>
+                    <p class="article-row-excerpt">我们常说要接纳，但真正的接纳不是被动忍让，而是认清事物运作的本质后，选择不与无常抗争。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">5 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.1s" data-category="psychology">
+                <span class="article-row-num">02</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-psychology">情绪内耗</span>
+                    <h3 class="article-row-title">内耗的本质：你不是在试图控制不可控的东西吗？</h3>
+                    <p class="article-row-excerpt">心理学认为，内耗往往源于内在冲突。当我们试图用有限的自我去控制他人的评价、他人的行为甚至未来的结果时，焦虑就会产生。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">8 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.15s" data-category="astro">
+                <span class="article-row-num">03</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-astro">占星</span>
+                    <h3 class="article-row-title">土星回归：生命中的重要转折与成熟考验</h3>
+                    <p class="article-row-excerpt">在占星学中，土星回归是人生重要的关键期。它不是为了惩罚你，而是为了打破不真实的幻想，逼迫你建立属于自己的现实结构。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">6 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.2s" data-category="psychology">
+                <span class="article-row-num">04</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-psychology">心理学</span>
+                    <h3 class="article-row-title">依恋理论与儒家的人伦关系</h3>
+                    <p class="article-row-excerpt">现代依恋理论揭示的亲密关系模式，与儒家五伦的深层结构惊人地一致。理解这一点，便能更深刻地理解'仁'的含义。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">10 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.25s" data-category="psychology">
+                <span class="article-row-num">05</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-psychology">心理学</span>
+                    <h3 class="article-row-title">认知行为疗法的东方回响</h3>
+                    <p class="article-row-excerpt">认知行为疗法的核心——改变思维方式以改变情绪——与佛学'转念'的修行如出一辙。东西方智慧在此殊途同归。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">12 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.3s" data-category="psychology">
+                <span class="article-row-num">06</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-psychology">心理学</span>
+                    <h3 class="article-row-title">情绪的四季节律：春生夏长秋收冬藏</h3>
+                    <p class="article-row-excerpt">古人早已洞察情绪的周期性规律。理解情绪的四季，便能顺应而非对抗内心的潮汐。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">8 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.35s" data-category="confucian">
+                <span class="article-row-num">07</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-confucian">儒家修身</span>
+                    <h3 class="article-row-title">《论语》中的情绪管理之道</h3>
+                    <p class="article-row-excerpt">孔子从未直接谈论'情绪管理'，但《论语》中蕴含的修身智慧，恰恰是东方最古老的情绪疗愈指南。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">15 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.4s" data-category="confucian">
+                <span class="article-row-num">08</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-confucian">儒家修身</span>
+                    <h3 class="article-row-title">仁者爱人：共情能力的古典根源</h3>
+                    <p class="article-row-excerpt">儒家的'仁'，本质上就是现代心理学所说的共情与慈悲。从心理学视角重读儒家经典，发现了修身的新维度。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">9 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.45s" data-category="confucian">
+                <span class="article-row-num">09</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-confucian">儒家修身</span>
+                    <h3 class="article-row-title">君子慎独：独处时的心理修炼</h3>
+                    <p class="article-row-excerpt">在无人注视时保持觉知，这是儒家留给我们的最深刻的心灵功课。慎独不仅是道德修养，更是一种心理能力。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">8 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.5s" data-category="buddhist">
+                <span class="article-row-num">10</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-buddhist">佛学禅修</span>
+                    <h3 class="article-row-title">正念心理学：从佛学到心理咨询室</h3>
+                    <p class="article-row-excerpt">正念减压疗法的兴起，让古老的禅修智慧在现代心理学中焕发新生。这不是简单的跨界，而是身心性命之学的回归。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">12 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.55s" data-category="buddhist">
+                <span class="article-row-num">11</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-buddhist">佛学禅修</span>
+                    <h3 class="article-row-title">色即是空：认知行为疗法的东方源头</h3>
+                    <p class="article-row-excerpt">《心经》的核心教义与认知行为疗法有着惊人的相通之处。当我们以心理学的视角重读经典，古老的智慧便焕发出新的光芒。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">14 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.6s" data-category="buddhist">
+                <span class="article-row-num">12</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-buddhist">佛学禅修</span>
+                    <h3 class="article-row-title">禅修入门：在忙碌中找到内心的宁静</h3>
+                    <p class="article-row-excerpt">不需要深山古寺，也不需要盘腿数小时。禅修的智慧，就在每一次呼吸之间。安顿身心，从这一刻开始。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">10 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.65s" data-category="taoist">
+                <span class="article-row-num">13</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-taoist">道家智慧</span>
+                    <h3 class="article-row-title">无为而无不为：道家的疗愈哲学</h3>
+                    <p class="article-row-excerpt">老子的'无为'不是不作为，而是不强为、不妄为。在心理咨询中，这种顺应自然的智慧恰恰是许多来访者最需要学会的一课。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">11 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.7s" data-category="taoist">
+                <span class="article-row-num">14</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-taoist">道家智慧</span>
+                    <h3 class="article-row-title">上善若水：柔性力量的心理学</h3>
+                    <p class="article-row-excerpt">水的力量在于它的柔软。在人际关系中，柔性往往比刚性更有穿透力。道家的水之智慧，为现代心理学提供了独特的视角。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">8 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.75s" data-category="taoist">
+                <span class="article-row-num">15</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-taoist">道家智慧</span>
+                    <h3 class="article-row-title">逍遥游：心灵自由的七个层次</h3>
+                    <p class="article-row-excerpt">庄子笔下的鲲鹏之变，是一幅通往心灵自由的路线图。从心理学的视角解读逍遥游，发现了自我解放的深层路径。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">14 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.8s" data-category="integration">
+                <span class="article-row-num">16</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-integration">融通心学</span>
+                    <h3 class="article-row-title">以心理学解读儒家的修身之道</h3>
+                    <p class="article-row-excerpt">儒家的修身齐家治国平天下，与现代心理学的自我实现理论有着深层的共鸣。融通两者，便能找到安顿身心性命的可行之路。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">16 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.85s" data-category="integration">
+                <span class="article-row-num">17</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-integration">融通心学</span>
+                    <h3 class="article-row-title">儒释道三家的心性论与现代心理治疗</h3>
+                    <p class="article-row-excerpt">儒家讲尽心知性，佛学讲明心见性，道家讲修心炼性。三家心性论与现代心理治疗的对话，打开了疗愈的新维度。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">18 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.9s" data-category="integration">
+                <span class="article-row-num">18</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-integration">融通心学</span>
+                    <h3 class="article-row-title">身心性命：东方智慧的整体心理学</h3>
+                    <p class="article-row-excerpt">东方儒释道三家共同关注的'身心性命'之学，为我们提供了一种超越西方二元论的整体心理学视角。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">13 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:0.95s" data-category="life">
+                <span class="article-row-num">19</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-life">生命实践</span>
+                    <h3 class="article-row-title">一杯茶里的身心安顿</h3>
+                    <p class="article-row-excerpt">从茶道到茶禅一味，泡一壶茶的仪式感本身就是一种正念练习。在日常小事中安顿身心性命。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">9 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:1s" data-category="life">
+                <span class="article-row-num">20</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-life">生命实践</span>
+                    <h3 class="article-row-title">二十四节气与心理调适</h3>
+                    <p class="article-row-excerpt">顺应天时，不仅是农耕智慧，更是保持心理健康的生活哲学。节气流转中，藏着安顿身心的密码。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">11 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="article-row reveal" style="--delay:1.05s" data-category="life">
+                <span class="article-row-num">21</span>
+                <div class="article-row-body">
+                    <span class="article-row-cat tag-life">生命实践</span>
+                    <h3 class="article-row-title">书法疗愈：一笔一画中的心流体验</h3>
+                    <p class="article-row-excerpt">古人以书法修身养性，现代心理学发现书法练习能有效降低焦虑。一笔一画之间，身心自然安顿。</p>
+                    <div class="article-row-meta">
+                        <span class="article-row-time">7 min read</span>
+                        <span class="article-row-link">阅读全文 →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section">
+        <h2>在文字中遇见更好的自己</h2>
+        <p>每一篇文章都是一次心灵的散步，愿你在字里行间找到属于自己的宁静与力量。</p>
+        <a href="index.html" class="btn btn-outline-light">返回首页</a>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+            <div class="footer-disclaimer">
+                <p>本网站内容用于自我理解、传统文化学习与个人成长参考，不替代医学诊断、心理治疗、法律或财务建议。</p>
+            </div>
+            <div class="footer-bottom-row">
+                <span>© 2026 慧珊. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        /* Articles page: reveal + filter logic */
+        (function () {
+            /* ——— Scroll nav effect ——— */
+            var nav = document.getElementById('siteNav');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 60) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            /* ——— Mobile menu toggle ——— */
+            var menuBtn = document.getElementById('menuBtn');
+            var mobileNav = document.getElementById('mobileNav');
+            menuBtn.addEventListener('click', function () {
+                menuBtn.classList.toggle('active');
+                mobileNav.classList.toggle('open');
+                document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+            });
+
+            /* ——— Reveal on scroll ——— */
+            var reveals = document.querySelectorAll('.reveal');
+            var revealObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+            reveals.forEach(function (el) { revealObserver.observe(el); });
+
+            /* ——— Filter tabs ——— */
+            var tabs = document.querySelectorAll('.filter-tab');
+            var cards = document.querySelectorAll('.article-row');
+
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    tabs.forEach(function (t) { t.classList.remove('active'); });
+                    tab.classList.add('active');
+
+                    var filter = tab.getAttribute('data-filter');
+
+                    cards.forEach(function (card) {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
